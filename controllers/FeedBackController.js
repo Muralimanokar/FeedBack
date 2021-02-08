@@ -17,7 +17,7 @@ router.post('/create_feedback', async function (req, res) {
 })
 
 
-router.get('/:id', async function (req, res) {
+router.get('/:id/getfeedback', async function (req, res) {
     var response = await FeedBackService.getfeedback(req.params.id)
     res.send(response)
 })
